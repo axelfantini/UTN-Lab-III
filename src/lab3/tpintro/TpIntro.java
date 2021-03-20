@@ -104,4 +104,12 @@ public class TpIntro {
                 break;
         }
     }
+
+    protected boolean IsPositive(int number)
+    {
+        return number > 0;
+    }
+    protected boolean IsEven(int number) {
+        return number % 2 == 0;
+    }
 }
