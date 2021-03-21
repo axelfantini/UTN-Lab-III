@@ -1,6 +1,7 @@
 package lab3;
 
 import lab3.tpintro.TpIntro;
+import lab3.tpobjects1.TpObjects1;
 
 import java.util.Scanner;
 
@@ -21,6 +22,7 @@ public class Main {
     private static int Menu(){
 
         System.out.println("1_ TP Intro");
+        System.out.println("2_ TP Objects I");
         System.out.println("Insert TP number: ");
         return scanner.nextInt();
     }
@@ -30,6 +32,9 @@ public class Main {
         {
             case 1:
                 new TpIntro().StartTP();
+                break;
+            case 2:
+                new TpObjects1().StartTP();
                 break;
             default:
                 System.out.println("That TP does not exist");

@@ -100,7 +100,7 @@ public class TpIntro {
                 new Exercise18().StartExercise();
                 break;
             default:
-                System.out.println("That TP does not exist");
+                System.out.println("That exercise does not exist");
                 break;
         }
     }
