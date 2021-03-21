@@ -112,4 +112,25 @@ public class TpIntro {
     protected boolean IsEven(int number) {
         return number % 2 == 0;
     }
+    protected int[] SeparateDigits(int number)
+    {
+        int[] response = new int[DigitCount(number)];
+        response[response.length-1] = number % 10;
+        for(int i = (response.length-2); i >= 0; i--)
+        {
+            number /= 10;
+            response[i] = number % 10;
+        }
+        return response;
+    }
+
+    protected int DigitCount(int number)
+    {
+        int i = 0;
+        for(i = 0; number != 0; i++)
+        {
+            number /= 10;
+        }
+        return i;
+    }
 }

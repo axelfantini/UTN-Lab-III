@@ -1,8 +1,10 @@
 package lab3.tpintro.exercises.exercise16;
 
+import lab3.tpintro.TpIntro;
+
 import java.util.Scanner;
 
-public class Exercise16 {
+public class Exercise16 extends TpIntro {
     public void StartExercise() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert a 3 digit whole number:");
@@ -15,25 +17,5 @@ public class Exercise16 {
 
     }
 
-    private int[] SeparateDigits(int number)
-    {
-        int[] response = new int[DigitCount(number)];
-        response[response.length-1] = number % 10;
-        for(int i = (response.length-2); i >= 0; i--)
-        {
-            number /= 10;
-            response[i] = number % 10;
-        }
-        return response;
-    }
 
-    private int DigitCount(int number)
-    {
-        int i = 0;
-        for(i = 0; number != 0; i++)
-        {
-            number /= 10;
-        }
-        return i;
-    }
 }
