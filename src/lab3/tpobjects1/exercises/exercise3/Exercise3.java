@@ -5,7 +5,7 @@ import lab3.tpobjects1.exercises.exercise3.models.SaleItem;
 import java.util.Scanner;
 
 public class Exercise3 {
-    public void StartExercise() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Let's create a Sale Item");
         System.out.println("Insert id:");

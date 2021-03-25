@@ -1,7 +1,7 @@
 package lab3.tpintro.exercises.exercise2;
 
 public class Exercise2 {
-    public void StartExercise()
+    public static void main(String[] args)
     {
         int X = 3;
         int Y = 21;

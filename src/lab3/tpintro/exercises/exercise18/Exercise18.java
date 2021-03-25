@@ -3,7 +3,7 @@ package lab3.tpintro.exercises.exercise18;
 import java.util.Scanner;
 
 public class Exercise18 {
-    public void StartExercise() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert the hours:");
         int hours = sc.nextInt();
@@ -14,7 +14,7 @@ public class Exercise18 {
         String valid = IsValidTime(hours, minutes, seconds) ? "valid" : "invalid";
         System.out.println(hours + ":" + minutes + ":" + seconds + " is a " + valid + " hour");
     }
-    private boolean IsValidTime(int hours, int minutes, int seconds)
+    private static boolean IsValidTime(int hours, int minutes, int seconds)
     {
         return (hours < 24 && hours >= 0) && (minutes < 60 && minutes >= 0) && (seconds < 60 && seconds >= 0);
     }

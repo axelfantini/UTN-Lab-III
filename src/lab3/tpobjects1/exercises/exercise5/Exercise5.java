@@ -5,7 +5,7 @@ import lab3.tpobjects1.exercises.exercise5.models.Hour;
 import java.util.Scanner;
 
 public class Exercise5 {
-    public void StartExercise() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Let's create an hour");
         int hour;

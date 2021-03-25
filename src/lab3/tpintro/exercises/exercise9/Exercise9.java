@@ -3,7 +3,7 @@ package lab3.tpintro.exercises.exercise9;
 import java.util.Scanner;
 
 public class Exercise9 {
-    public void StartExercise() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert a whole number:");
         int num = sc.nextInt();
@@ -12,11 +12,11 @@ public class Exercise9 {
 
     }
 
-    private int DoubleAInt(int num)
+    private static int DoubleAInt(int num)
     {
         return num * 2;
     }
-    private int TripleAInt(int num)
+    private static int TripleAInt(int num)
     {
         return num * 3;
     }

@@ -44,10 +44,17 @@ public class BankAccount {
 
     public double Withdraw(double cash)
     {
-        if(this.Balance >= cash)
-            this.Balance -= cash;
+        if(cash > 0)
+        {
+            if(this.Balance >= cash)
+                this.Balance -= cash;
+            else
+                System.out.println("There is not enough money in the account");
+        }
         else
-            System.out.println("There is not enough money in the account");
+        {
+            System.out.println("Invalid amount");
+        }
         return this.Balance;
     }
 

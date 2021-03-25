@@ -5,7 +5,7 @@ import lab3.tpobjects1.exercises.exercise1.models.Rectangle;
 import java.util.Scanner;
 
 public class Exercise1 {
-    public void StartExercise() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Let's create a rectangle");

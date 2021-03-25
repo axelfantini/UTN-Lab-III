@@ -1,7 +1,7 @@
 package lab3.tpintro.exercises.exercise3;
 
 public class Exercise3 {
-    public void StartExercise()
+    public static void main(String[] args)
     {
         int N = 5;
         System.out.println("N: " + N);
