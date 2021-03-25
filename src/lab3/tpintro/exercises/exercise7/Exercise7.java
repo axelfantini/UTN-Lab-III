@@ -1,9 +1,7 @@
 package lab3.tpintro.exercises.exercise7;
-
 import lab3.tpintro.TpIntro;
-
 public class Exercise7 extends TpIntro {
-    public void StartExercise() {
+    public static void main(String[] args) {
         int C = 57;
         String positive = C == 0 ? "neutral" : (IsPositive(C) ? "positive" : "negative");
         System.out.println(C + " is a " + positive + " number");
@@ -17,5 +15,5 @@ public class Exercise7 extends TpIntro {
         System.out.println(C + " is " + greater + " than " + 100);
     }
 
-    public boolean IsMultiple(int number, int multiple) { return number % multiple == 0; }
+    public static boolean IsMultiple(int number, int multiple) { return number % multiple == 0; }
 }

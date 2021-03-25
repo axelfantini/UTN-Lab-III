@@ -1,11 +1,9 @@
 package lab3.tpintro.exercises.exercise16;
 
-import lab3.tpintro.TpIntro;
-
 import java.util.Scanner;
-
+import lab3.tpintro.TpIntro;
 public class Exercise16 extends TpIntro {
-    public void StartExercise() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Insert a 3 digit whole number:");
         int num = sc.nextInt();

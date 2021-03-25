@@ -1,8 +1,6 @@
 package lab3.tpintro.exercises.exercise1;
-
 public class Exercise1 {
-    public void StartExercise()
-    {
+    public static void main(String[] args){
         int N = 1;
         double A = 1.32;
         char C = 'f';
