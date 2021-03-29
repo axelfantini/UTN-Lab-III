@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class BillWithSaleItems {
+public class BillWithSaleItems extends Bill {
     private UUID id;
     private List<SaleItem> items;
     private double totalAmount;
@@ -28,41 +28,6 @@ public class BillWithSaleItems {
         this.totalAmount = 0;
         this.customer = new Customer();
         this.items = new ArrayList<SaleItem>();
-    }
-
-    public double getTotalAmount() {
-        return totalAmount;
-    }
-
-    public void setTotalAmount(double totalAmount) {
-        this.totalAmount = totalAmount;
-    }
-
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
-
-    public UUID getId() {
-        return id;
-    }
-
-    public LocalDate getCreatedDate() {
-        return createdDate;
-    }
-
-    public double getFinalAmount()
-    {
-        double discount = this.customer.getDiscountPercentage() / 100;
-        return this.totalAmount * (1 - discount);
-    }
-
-    public void printBill()
-    {
-        System.out.println(this.toString());
     }
 
     public String toString()
